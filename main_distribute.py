@@ -125,9 +125,9 @@ if not os.path.exists(args.log_dir):
     os.makedirs(args.log_dir)
 
 data_root = args.img_root+ '/dataframe_stainnorm_addroot/'  
-args.train_data_dir = data_root + 'train/train_with_0_5.csv' 
-args.val_data_dir = data_root +'val/val_with_0_5_sample.csv' 
-args.test_data_dir = data_root + 'val/val_with_0_5.csv'  
+args.train_data_dir = data_root + 'train.csv' 
+args.val_data_dir = data_root +'val.csv' 
+args.test_data_dir = data_root + 'test.csv'  
 
 if test_code:    
     args.train_data_dir =  './test_code.csv'
